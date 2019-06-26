@@ -1,0 +1,25 @@
+{
+    "success":true,
+    "data":
+        {
+            "BusinessEngagementViewings":
+                [
+                    {
+                        "id":4,
+                        "business_engagement_id":9,
+                        "date_time_option1":"2014-12-18 17:00:00",
+                        "date_time_option2":"2014-12-19 14:00:00",
+                        "date_time_option3":"2014-12-19 17:00:00",
+                        "is_viewing_date_time_options_submitted":true,
+                        "date_time_viewing_date_time_options_submitted":"2014-12-18 17:22:24",
+                        "is_viewing_date_time_options_reviewed":true,
+                        "date_time_viewing_date_time_options_reviewed":"2014-12-18 17:24:54",
+                        "is_viewing_date_time_agreed":true,
+                        "viewing_date_time":"2014-12-18 17:00:00",
+                        "viewing_date_time_options_reason_for_rejection":null,
+                        "is_cancelled":null,
+                        "cancelled_by_name":null
+                    }
+                ]
+        }
+}

@@ -1,0 +1,64 @@
+{
+    "success": true,
+    "data": [{
+             "id": 5139,
+             "seller_public_user_id": 8953,
+             "name": "Kiddsafe Limited",
+             "tenure": "Web-based",
+             "Address": {
+             "line1": "2 The Grange",
+             "line2": "Hurstpierpoint",
+             "line3": null,
+             "town_city": "HASSOCKS",
+             "postcode": "BN6 9FD"
+             },
+             "BusinessSector": {
+             "id": 101,
+             "name": "Online Retailers",
+             
+             "BusinessCategory": {
+             "id": 9,
+             "name": "Online Businesses"
+             }
+             },
+             "BusinessLocation": {
+             "id": 516,
+             "name": "Haywards Heath, Burgess Hill & Hassocks",
+             "BusinessRegion": {
+             "id": 105,
+             "name": "West Sussex"
+             }
+             },
+             "year_business_established": 2,
+             "number_of_years_established": 2,
+             "property_feehold_value": null,
+             "property_rent_per_annum": null,
+             "property_has_accomodation": "No",
+             "has_staff": "No",
+             "annual_turnover": 6000,
+             "gross_profit": null,
+             "net_profit": 0,
+             "adjusted_net_profit": null,
+             "opportunity": "This business is no longer available",
+             "property": "This business is no longer available",
+             "asking_price": 2500,
+             "current_status": "For sale",
+             "BusinessPhotos": [{
+                                "id": 10553,
+                                "original_filename": "Sold.png",
+                                "path_to_file": "/uploads/business-photo/business-photo-5a203ff588de5.png",
+                                "display_order": null,
+                                "is_primary": null
+                                }],
+             "is_free_trial": null,
+             "is_active": true,
+             "is_premium_listing": false,
+             "is_cancelled": null,
+             "date_time_cancelled": null
+             }],
+    "pagination": {
+        "total_business_count": 1,
+        "per_page": 10,
+        "page_count": 1
+    }
+}

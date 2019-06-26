@@ -1,0 +1,27 @@
+{
+    "success":true,
+    "data":
+    {
+        "User":
+        {
+            "id":6648,
+            "token":"e1d309e034219a5e7562",
+            "PublicUser":
+            {
+                "id":6696,
+                "first_name":"Aaron",
+                "last_name":"Newton",
+                "email":"aaron.api-test20@mybizdaq.com",
+                "PublicUserBuyerProfile":
+                {
+                    "id":4734,
+                    "is_sms_verification_required":true,
+                    "sms_verification_code":1528,
+                    "is_sms_verification_complete":null,
+                    "is_email_verification_required":true,
+                    "email_verification_code":"cf2866d1f56d93e"
+                }
+            }
+        }
+    }
+}

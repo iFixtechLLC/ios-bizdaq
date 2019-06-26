@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageGalleryCell" id="0ff-Ri-se0" customClass="ImageGalleryCell" customModule="Bizdaq" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="256" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="256" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GYI-c4-y8B">
+                        <rect key="frame" x="0.0" y="0.0" width="256" height="145"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" name="bizdaq-dark-blue"/>
+            <constraints>
+                <constraint firstItem="GYI-c4-y8B" firstAttribute="leading" secondItem="aCg-lM-vYr" secondAttribute="leading" id="Grb-lf-Fsp"/>
+                <constraint firstItem="aCg-lM-vYr" firstAttribute="trailing" secondItem="GYI-c4-y8B" secondAttribute="trailing" id="SRY-0S-LTs"/>
+                <constraint firstItem="GYI-c4-y8B" firstAttribute="top" secondItem="aCg-lM-vYr" secondAttribute="top" id="agX-i9-8cC"/>
+                <constraint firstItem="aCg-lM-vYr" firstAttribute="bottom" secondItem="GYI-c4-y8B" secondAttribute="bottom" id="uox-aC-DMc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="aCg-lM-vYr"/>
+            <size key="customSize" width="256" height="145"/>
+            <connections>
+                <outlet property="imageView" destination="GYI-c4-y8B" id="8Sa-Xj-aVm"/>
+            </connections>
+            <point key="canvasLocation" x="8" y="-227.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="bizdaq-dark-blue">
+            <color red="0.0040000001899898052" green="0.23499999940395355" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

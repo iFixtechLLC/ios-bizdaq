@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CategoryCell" customModule="Bizdaq" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peQ-g1-JEa">
+                    <rect key="frame" x="16" y="8" width="343" height="56"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AN-gr-EQG">
+                            <rect key="frame" x="16" y="19" width="134.5" height="18.5"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigation-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Lti-he-Z5D">
+                            <rect key="frame" x="315" y="22" width="8" height="12"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Lti-he-Z5D" secondAttribute="trailing" constant="20" id="GbG-Q0-g0W"/>
+                        <constraint firstItem="9AN-gr-EQG" firstAttribute="centerY" secondItem="peQ-g1-JEa" secondAttribute="centerY" id="Oh1-Qp-Gim"/>
+                        <constraint firstItem="Lti-he-Z5D" firstAttribute="centerY" secondItem="peQ-g1-JEa" secondAttribute="centerY" id="YBh-E4-5q3"/>
+                        <constraint firstAttribute="height" constant="56" id="fMb-TU-fYP"/>
+                        <constraint firstItem="9AN-gr-EQG" firstAttribute="leading" secondItem="peQ-g1-JEa" secondAttribute="leading" constant="16" id="pYz-wU-HCM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="peQ-g1-JEa" secondAttribute="trailing" constant="16" id="FHT-Y9-ogO"/>
+                <constraint firstItem="peQ-g1-JEa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="dHu-1V-F28"/>
+                <constraint firstItem="peQ-g1-JEa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="e7B-GM-PKZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="peQ-g1-JEa" secondAttribute="bottom" constant="8" id="mMe-O3-aBT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundBorderView" destination="peQ-g1-JEa" id="YS6-x9-jzX"/>
+                <outlet property="titleLabel" destination="9AN-gr-EQG" id="S3Q-lt-Nkc"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="-236"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navigation-arrow" width="8" height="12"/>
+    </resources>
+</document>

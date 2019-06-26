@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (4.7.2)
+  - IHKeyboardAvoiding (4.2)
+  - JGProgressHUD (2.0.3)
+  - JTAppleCalendar (7.1.6)
+  - Kingfisher (4.8.0)
+  - MessageKit (1.0.0)
+  - OneSignal (2.9.0)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - Segmentio (3.0)
+  - TTRangeSlider (1.0.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - IHKeyboardAvoiding
+  - JGProgressHUD
+  - JTAppleCalendar (~> 7.0)
+  - Kingfisher (~> 4.0)
+  - MessageKit
+  - OneSignal (< 3.0, >= 2.6.2)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - Segmentio (~> 3.0)
+  - TTRangeSlider
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - IHKeyboardAvoiding
+    - JGProgressHUD
+    - JTAppleCalendar
+    - Kingfisher
+    - MessageKit
+    - OneSignal
+    - RxCocoa
+    - RxSwift
+    - Segmentio
+    - TTRangeSlider
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  IHKeyboardAvoiding: 9fbf816b7c3c84911964802ff110d12caf40ebef
+  JGProgressHUD: 12b20a8f4ffe05258f8635c1ab92816e451f904d
+  JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  MessageKit: 16160036b16476b04bd0e9f2c7ce67e662e503e4
+  OneSignal: fc816c9dc308ea4f60348a02500db8198b43cf69
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  Segmentio: 1607fba3b42230f5f91e997d1a3f337f1176674c
+  TTRangeSlider: 78188bea83f6471a06f75adbc88da5e990baeafe
+
+PODFILE CHECKSUM: f5ddf1d58ef0181c7fb44e6878d230d01e34d6f1
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="114" id="MTc-Gg-H4X" customClass="ConversationCell" customModule="Bizdaq" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="497" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MTc-Gg-H4X" id="Hfr-KZ-iEj">
+                <rect key="frame" x="0.0" y="0.0" width="497" height="113.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTe-xG-7HR">
+                        <rect key="frame" x="0.0" y="0.0" width="497" height="113.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ppm-gq-FYd">
+                                <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4xH-Be-r1B"/>
+                                    <constraint firstAttribute="height" constant="40" id="e1i-za-fTa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jon Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUL-4L-wwA">
+                                <rect key="frame" x="80" y="16" width="60" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="SJ1-V5-gbu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" red="0.21568627450980393" green="0.25882352941176467" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing lorem…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddF-Mf-h4J">
+                                <rect key="frame" x="80" y="37" width="373" height="37"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 min ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIN-0f-oMx">
+                                <rect key="frame" x="427" y="16" width="54" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mKB-Qy-9Mk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="bizdaq-blue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYG-Ri-BzR">
+                                <rect key="frame" x="469" y="53" width="12" height="12"/>
+                                <color key="backgroundColor" name="bizdaq-blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="7QG-1J-vMk"/>
+                                    <constraint firstAttribute="width" constant="12" id="IK6-13-GMD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fUL-4L-wwA" firstAttribute="top" secondItem="cTe-xG-7HR" secondAttribute="top" constant="16" id="8TJ-pa-cSJ"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ddF-Mf-h4J" secondAttribute="bottom" constant="16" id="BDI-AG-E7Q"/>
+                            <constraint firstAttribute="trailing" secondItem="SIN-0f-oMx" secondAttribute="trailing" constant="16" id="Fhv-wn-OUe"/>
+                            <constraint firstItem="ddF-Mf-h4J" firstAttribute="top" secondItem="fUL-4L-wwA" secondAttribute="bottom" id="JUn-8a-DHd"/>
+                            <constraint firstItem="Ppm-gq-FYd" firstAttribute="leading" secondItem="cTe-xG-7HR" secondAttribute="leading" constant="16" id="JWg-6c-oes"/>
+                            <constraint firstAttribute="trailing" secondItem="DYG-Ri-BzR" secondAttribute="trailing" constant="16" id="Jqg-Wr-aFr"/>
+                            <constraint firstItem="fUL-4L-wwA" firstAttribute="leading" secondItem="Ppm-gq-FYd" secondAttribute="trailing" constant="24" id="K5V-Kd-GoI"/>
+                            <constraint firstItem="ddF-Mf-h4J" firstAttribute="leading" secondItem="Ppm-gq-FYd" secondAttribute="trailing" constant="24" id="Swa-it-FGM"/>
+                            <constraint firstItem="SIN-0f-oMx" firstAttribute="centerY" secondItem="fUL-4L-wwA" secondAttribute="centerY" id="TsC-lC-ZO5"/>
+                            <constraint firstItem="Ppm-gq-FYd" firstAttribute="top" secondItem="cTe-xG-7HR" secondAttribute="top" constant="16" id="Y9D-73-TjA"/>
+                            <constraint firstItem="DYG-Ri-BzR" firstAttribute="top" secondItem="SIN-0f-oMx" secondAttribute="bottom" constant="16" id="tlb-FC-pAF"/>
+                            <constraint firstItem="DYG-Ri-BzR" firstAttribute="leading" secondItem="ddF-Mf-h4J" secondAttribute="trailing" constant="16" id="uc9-Gx-sv8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cTe-xG-7HR" secondAttribute="bottom" id="8pN-iT-cjv"/>
+                    <constraint firstItem="cTe-xG-7HR" firstAttribute="top" secondItem="Hfr-KZ-iEj" secondAttribute="top" id="9GJ-km-Sqc"/>
+                    <constraint firstItem="cTe-xG-7HR" firstAttribute="leading" secondItem="Hfr-KZ-iEj" secondAttribute="leading" id="DFm-7p-Gsc"/>
+                    <constraint firstAttribute="trailing" secondItem="cTe-xG-7HR" secondAttribute="trailing" id="x3L-fE-gXE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageLabel" destination="ddF-Mf-h4J" id="phM-t5-CNQ"/>
+                <outlet property="nameLabel" destination="fUL-4L-wwA" id="RYS-iE-isP"/>
+                <outlet property="profileImageView" destination="Ppm-gq-FYd" id="9Pf-4g-TdD"/>
+                <outlet property="timestampLabel" destination="SIN-0f-oMx" id="ijE-7v-PHt"/>
+                <outlet property="unreadView" destination="DYG-Ri-BzR" id="erz-79-nZw"/>
+            </connections>
+            <point key="canvasLocation" x="148" y="104.34782608695653"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="bizdaq-blue">
+            <color red="0.11800000071525574" green="0.5220000147819519" blue="0.87800002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jqo-Do-ZVF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DocumentDashboard-->
+        <scene sceneID="DSw-72-GpI">
+            <objects>
+                <viewController title="DocumentDashboard" id="mDE-rU-vUv" customClass="DocumentViewController" customModule="Bizdaq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0Z-KH-HY7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jMI-3w-WNO" userLabel="Upload VIew">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <subviews>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGX-GU-mrx" userLabel="Type Select" customClass="ValidatedSelectionBox" customModule="Bizdaq" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="15" width="345" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="uuC-xu-QAE"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="GVA-wU-y30"/>
+                                    </view>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKX-NZ-67D" userLabel="Business Select" customClass="ValidatedSelectionBox" customModule="Bizdaq" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="75" width="345" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="iMa-ZR-GoQ"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="Bvo-kM-g4r"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CW-FO-JEw">
+                                        <rect key="frame" x="15" y="135" width="345" height="45"/>
+                                        <color key="backgroundColor" name="bizdaq-blue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="6Vu-GD-raa"/>
+                                        </constraints>
+                                        <state key="normal" title="Upload">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="uploadDocument:" destination="mDE-rU-vUv" eventType="touchUpInside" id="MJW-lI-gcy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5CW-FO-JEw" secondAttribute="trailing" constant="15" id="LMd-XZ-r9p"/>
+                                    <constraint firstAttribute="trailing" secondItem="BGX-GU-mrx" secondAttribute="trailing" constant="15" id="S6M-ha-QSk"/>
+                                    <constraint firstItem="IKX-NZ-67D" firstAttribute="leading" secondItem="jMI-3w-WNO" secondAttribute="leading" constant="15" id="WXI-fq-uCS"/>
+                                    <constraint firstItem="BGX-GU-mrx" firstAttribute="top" secondItem="jMI-3w-WNO" secondAttribute="top" constant="15" id="Y8y-Fp-I3M"/>
+                                    <constraint firstItem="5CW-FO-JEw" firstAttribute="top" secondItem="IKX-NZ-67D" secondAttribute="bottom" constant="15" id="Yjc-Te-aI4"/>
+                                    <constraint firstAttribute="height" constant="200" id="dBK-Wm-wv5"/>
+                                    <constraint firstAttribute="trailing" secondItem="IKX-NZ-67D" secondAttribute="trailing" constant="15" id="fFA-DR-Oug"/>
+                                    <constraint firstItem="BGX-GU-mrx" firstAttribute="leading" secondItem="jMI-3w-WNO" secondAttribute="leading" constant="15" id="oVz-Iw-tQS"/>
+                                    <constraint firstItem="IKX-NZ-67D" firstAttribute="top" secondItem="BGX-GU-mrx" secondAttribute="bottom" constant="15" id="sJS-GT-E2X"/>
+                                    <constraint firstItem="5CW-FO-JEw" firstAttribute="leading" secondItem="jMI-3w-WNO" secondAttribute="leading" constant="15" id="wHn-Rt-fNT"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bBt-fQ-KUK">
+                                <rect key="frame" x="0.0" y="264" width="375" height="359"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mDE-rU-vUv" id="1XY-bo-d8U"/>
+                                    <outlet property="delegate" destination="mDE-rU-vUv" id="i7h-7q-3lc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jMI-3w-WNO" firstAttribute="leading" secondItem="oN2-2J-1wQ" secondAttribute="leading" id="4dU-vM-G5a"/>
+                            <constraint firstItem="oN2-2J-1wQ" firstAttribute="bottom" secondItem="bBt-fQ-KUK" secondAttribute="bottom" id="C5a-YL-mXg"/>
+                            <constraint firstItem="bBt-fQ-KUK" firstAttribute="top" secondItem="jMI-3w-WNO" secondAttribute="bottom" id="KXA-07-zZU"/>
+                            <constraint firstItem="jMI-3w-WNO" firstAttribute="top" secondItem="oN2-2J-1wQ" secondAttribute="top" id="PQ0-y1-Sml"/>
+                            <constraint firstItem="oN2-2J-1wQ" firstAttribute="trailing" secondItem="bBt-fQ-KUK" secondAttribute="trailing" id="SpU-Y7-U8e"/>
+                            <constraint firstItem="bBt-fQ-KUK" firstAttribute="leading" secondItem="oN2-2J-1wQ" secondAttribute="leading" id="TdE-AS-Mgf"/>
+                            <constraint firstItem="oN2-2J-1wQ" firstAttribute="trailing" secondItem="jMI-3w-WNO" secondAttribute="trailing" id="jnY-BG-hSe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oN2-2J-1wQ"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Documents" id="v5B-Q9-aHW">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="navigation-menu-button" id="mZe-NS-ahS">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didPressMenuButton:" destination="mDE-rU-vUv" id="o54-7q-Y64"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="businessField" destination="IKX-NZ-67D" id="ML8-d1-KK0"/>
+                        <outlet property="tableView" destination="bBt-fQ-KUK" id="xrx-3t-PId"/>
+                        <outlet property="typeField" destination="BGX-GU-mrx" id="7DQ-fr-zwQ"/>
+                        <outlet property="uploadButton" destination="5CW-FO-JEw" id="llB-se-7rb"/>
+                        <segue destination="ufq-oL-uGh" kind="show" identifier="showFile" id="2GJ-h4-zf7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVU-Ze-MXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="103"/>
+        </scene>
+        <!--Document File View Controller-->
+        <scene sceneID="3RU-pU-RmZ">
+            <objects>
+                <viewController id="ufq-oL-uGh" customClass="DocumentFileViewController" customModule="Bizdaq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QUr-b1-weu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPF-2U-DvV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iPF-2U-DvV" firstAttribute="top" secondItem="XZP-vP-CWn" secondAttribute="top" id="3iy-2N-12a"/>
+                            <constraint firstItem="XZP-vP-CWn" firstAttribute="bottom" secondItem="iPF-2U-DvV" secondAttribute="bottom" id="e4G-8h-gWh"/>
+                            <constraint firstItem="iPF-2U-DvV" firstAttribute="leading" secondItem="XZP-vP-CWn" secondAttribute="leading" id="hRK-y5-3HU"/>
+                            <constraint firstItem="XZP-vP-CWn" firstAttribute="trailing" secondItem="iPF-2U-DvV" secondAttribute="trailing" id="vNg-PZ-ZRg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XZP-vP-CWn"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="iPF-2U-DvV" id="1Ju-gv-cPS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N07-FJ-IVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="65"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QHX-zN-KOl">
+            <objects>
+                <navigationController id="jqo-Do-ZVF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JxJ-r9-WUc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mDE-rU-vUv" kind="relationship" relationship="rootViewController" id="TeM-Mf-zLp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5l-2q-32k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-930" y="103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navigation-menu-button" width="18" height="12"/>
+        <namedColor name="bizdaq-blue">
+            <color red="0.11800000071525574" green="0.5220000147819519" blue="0.87800002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

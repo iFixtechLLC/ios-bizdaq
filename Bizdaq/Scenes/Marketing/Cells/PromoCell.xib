@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="IXb-vw-SxS" customClass="PromoCell" customModule="Bizdaq" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IXb-vw-SxS" id="aqd-cs-TLk">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZy-jW-43k">
+                        <rect key="frame" x="0.0" y="0.0" width="434" height="49.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhN-e4-hcL">
+                                <rect key="frame" x="16" y="0.0" width="191" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" red="0.21568627450980393" green="0.25882352941176467" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9g-lh-GX5">
+                                <rect key="frame" x="227" y="0.0" width="191" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" red="0.21568627450980393" green="0.25882352941176467" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43137254899999999" green="0.49803921569999998" blue="0.55294117649999996" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="i9g-lh-GX5" secondAttribute="bottom" id="40L-cZ-05C"/>
+                            <constraint firstItem="PhN-e4-hcL" firstAttribute="leading" secondItem="hZy-jW-43k" secondAttribute="leading" constant="16" id="CS4-u4-Y1L"/>
+                            <constraint firstItem="PhN-e4-hcL" firstAttribute="top" secondItem="hZy-jW-43k" secondAttribute="top" id="E29-Vm-9Q4"/>
+                            <constraint firstAttribute="bottom" secondItem="PhN-e4-hcL" secondAttribute="bottom" id="FPC-OX-S9f"/>
+                            <constraint firstItem="i9g-lh-GX5" firstAttribute="top" secondItem="hZy-jW-43k" secondAttribute="top" id="Ln9-ls-B2L"/>
+                            <constraint firstAttribute="trailing" secondItem="i9g-lh-GX5" secondAttribute="trailing" constant="16" id="k8A-FC-c4G"/>
+                            <constraint firstItem="i9g-lh-GX5" firstAttribute="leading" secondItem="PhN-e4-hcL" secondAttribute="trailing" constant="20" id="k8L-vX-QQN"/>
+                            <constraint firstItem="i9g-lh-GX5" firstAttribute="width" secondItem="PhN-e4-hcL" secondAttribute="width" id="rSc-T6-laa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hZy-jW-43k" firstAttribute="top" secondItem="aqd-cs-TLk" secondAttribute="top" id="Ep5-hW-UgT"/>
+                    <constraint firstItem="hZy-jW-43k" firstAttribute="leading" secondItem="aqd-cs-TLk" secondAttribute="leading" id="FmF-ei-Uuh"/>
+                    <constraint firstAttribute="bottom" secondItem="hZy-jW-43k" secondAttribute="bottom" id="gtk-mb-4LU"/>
+                    <constraint firstAttribute="trailing" secondItem="hZy-jW-43k" secondAttribute="trailing" id="rRn-9K-ZqM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomConstraint" destination="gtk-mb-4LU" id="Rkk-NY-hT6"/>
+                <outlet property="cellBackgroundView" destination="hZy-jW-43k" id="RNx-O8-B8C"/>
+                <outlet property="leftLabel" destination="PhN-e4-hcL" id="1JZ-OI-UFO"/>
+                <outlet property="rightLabel" destination="i9g-lh-GX5" id="ekh-Z9-zRK"/>
+                <outlet property="topConstraint" destination="Ep5-hW-UgT" id="BSA-2g-r8J"/>
+            </connections>
+            <point key="canvasLocation" x="92.799999999999997" y="61.169415292353825"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,36 @@
+{
+   "success":true,
+   "data":{
+      "User":{
+         "id":6016,
+         "token":"8776a6b82284779d3a3d",
+         "PublicUser":{
+            "id":6053,
+            "first_name":"Aaron",
+            "last_name":"Newton",
+            "email":"aaron.newton@mybizdaq.com",
+            "PublicUserProfile":{
+               "id":7,
+               "bio":null,
+               "photo_original_filename":"Group2revised.png",
+               "photo_path_to_file":"/uploads/public-user-profile-photo/public-user-profile-photo5afd8274ae6b3.png",
+               "is_post_contact_opted_in":true,
+               "is_sms_contact_opted_in":true,
+               "is_phone_contact_opted_in":true,
+               "is_email_contact_opted_in":true
+            },
+            "PublicUserBuyerProfile":{
+               "id":4636,
+               "is_sms_verification_required":null,
+               "sms_verification_code":null,
+               "is_sms_verification_complete":null,
+               "is_email_verification_required":null,
+               "email_verification_code":null
+            },
+            "PublicUserSellerProfile":{
+               "id":3935
+            }
+         }
+      }
+   }
+}

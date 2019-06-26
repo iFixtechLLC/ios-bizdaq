@@ -1,0 +1,429 @@
+{
+    "success": true,
+    "data": [
+             {
+             "id": 4402,
+             "seller_public_user_id": 6086,
+             "name": "Name",
+             "tenure": "Freehold",
+             "Address": {
+             "line1": null,
+             "line2": null,
+             "line3": null,
+             "town_city": null,
+             "postcode": "LS9 8EE"
+             },
+             "BusinessSector": {
+             "id": 282,
+             "name": "Accountancy Practices",
+             "BusinessCategory": {
+             "id": 15,
+             "name": "Service Businesses"
+             }
+             },
+             "BusinessLocation": {
+             "id": 526,
+             "name": "Leeds",
+             "BusinessRegion": {
+             "id": 106,
+             "name": "West Yorkshire"
+             }
+             },
+             "year_business_established": 28,
+             "number_of_years_established": 28,
+             "property_feehold_value": 90000,
+             "property_rent_per_annum": null,
+             "property_has_accomodation": "No",
+             "has_staff": "No",
+             "annual_turnover": 3000,
+             "gross_profit": null,
+             "net_profit": 3000,
+             "adjusted_net_profit": null,
+             "opportunity": "This is my business description",
+             "property": null,
+             "asking_price": 21000,
+             "current_status": "For sale",
+             "BusinessPhotos": [
+                                {
+                                "id": 5775,
+                                "original_filename": "business-photos-5a52e201d88f6-18.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d084735ec3-1.png",
+                                "display_order": null,
+                                "is_primary": true
+                                },
+                                {
+                                "id": 5776,
+                                "original_filename": "google.jpg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d0847d986a-2.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5777,
+                                "original_filename": "business-photos-5a52e201d88f6-18.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d084b8c4a4-3.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5778,
+                                "original_filename": "business-photos-5a52e2062c044-19.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d084c01c6f-4.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5779,
+                                "original_filename": "business-photos-5a680b4a94e07-31.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d084c691d7-5.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5780,
+                                "original_filename": "business-photos-5a680b4c4d6c8-32.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d084ca8161-6.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5781,
+                                "original_filename": "business-photos-5a680b4e032de-33.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d084ce8715-7.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5782,
+                                "original_filename": "business-photos-5a680b4fb00af-34.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d084d3284f-8.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5783,
+                                "original_filename": "business-photos-5a680b54f2a8a-37.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d084d71445-9.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5784,
+                                "original_filename": "business-photos-5a680c31ae21b-55.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d084db17c0-10.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5785,
+                                "original_filename": "google.jpg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d084df41e7-11.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5786,
+                                "original_filename": "business-photos-5a52e1f15ff40-15.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d13b5a064a-12.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5787,
+                                "original_filename": "business-photos-5a52e1f46f6d1-16.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d13b9bf6ed-13.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5788,
+                                "original_filename": "business-photos-5a52e1fe1696f-17.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d13ba321fa-14.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5789,
+                                "original_filename": "business-photos-5a680b54f2a8a-37.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d140d5a5f6-15.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5790,
+                                "original_filename": "business-photos-5a680b594e7eb-39.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d140da4e0a-16.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5791,
+                                "original_filename": "business-photos-5a680b638dc21-43.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d140de9ef1-17.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5792,
+                                "original_filename": "business-photos-5a680b6194096-42.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d140e34da9-18.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5793,
+                                "original_filename": "business-photos-5a680c31ae21b-55.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d140e7748e-19.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5794,
+                                "original_filename": "business-photos-5a51a5c039ea5-2.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b1592b4-20.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5795,
+                                "original_filename": "business-photos-5a51a5e1186f2-3.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b1cef40-21.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5796,
+                                "original_filename": "business-photos-5a51a5f133ee7-4.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b21e974-22.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5797,
+                                "original_filename": "business-photos-5a51a654e3501-6.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b2627d1-23.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5798,
+                                "original_filename": "business-photos-5a51a6768b18f-10.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b2a29e2-24.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5799,
+                                "original_filename": "business-photos-5a51a67344bc1-9.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b2e6619-25.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5800,
+                                "original_filename": "business-photos-5a52e1e9c0a86-14.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b339878-26.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5801,
+                                "original_filename": "business-photos-5a52e1e695da2-13.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b3a4f4c-27.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5802,
+                                "original_filename": "business-photos-5a52e1f15ff40-15.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b41c899-28.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5803,
+                                "original_filename": "business-photos-5a52e1f46f6d1-16.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b487230-29.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5804,
+                                "original_filename": "business-photos-5a52e1fe1696f-17.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b4f1626-30.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5805,
+                                "original_filename": "business-photos-5a52e20ff138e-20.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b57dd95-31.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5806,
+                                "original_filename": "business-photos-5a52e21b7e796-22.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b661701-32.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5807,
+                                "original_filename": "business-photos-5a52e22c21fc5-24.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b747975-33.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5808,
+                                "original_filename": "business-photos-5a52e201d88f6-18.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b834c67-34.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5809,
+                                "original_filename": "business-photos-5a52e2062c044-19 (1).png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b8b30a6-35.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5810,
+                                "original_filename": "business-photos-5a52e2062c044-19.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14b989989-36.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5811,
+                                "original_filename": "business-photos-5a52e2156cef7-21.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14ba0fa4d-37.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5812,
+                                "original_filename": "business-photos-5a52e226054c7-23.png",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14bb07e56-38.png",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5813,
+                                "original_filename": "business-photos-5a680b4a94e07-31.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14bbd2bb0-39.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5814,
+                                "original_filename": "business-photos-5a680b4c4d6c8-32.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14bc1ff5f-40.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5815,
+                                "original_filename": "business-photos-5a680b4e032de-33.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14bc79458-41.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5816,
+                                "original_filename": "business-photos-5a680b4fb00af-34.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14bcbe0b6-42.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5817,
+                                "original_filename": "business-photos-5a680b5b3d87e-40.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14bd1d7b3-43.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5818,
+                                "original_filename": "business-photos-5a680b5d34ff0-41.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14bd63095-44.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5819,
+                                "original_filename": "business-photos-5a680b54f2a8a-37.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14bdd2594-45.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5820,
+                                "original_filename": "business-photos-5a680b56daf04-38.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14be2ad35-46.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5821,
+                                "original_filename": "business-photos-5a680b594e7eb-39.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14be6bc1d-47.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5822,
+                                "original_filename": "business-photos-5a680b638dc21-43.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14beade4a-48.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5823,
+                                "original_filename": "business-photos-5a680b65011f1-44.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14bf0293a-49.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5824,
+                                "original_filename": "business-photos-5a680b6194096-42.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14bf514d3-50.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5825,
+                                "original_filename": "business-photos-5a680c31ae21b-55.jpeg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14bf95572-51.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                },
+                                {
+                                "id": 5826,
+                                "original_filename": "google.jpg",
+                                "path_to_file": "\/uploads\/business-photo\/business-photos-5a9d14bfe1c51-52.jpeg",
+                                "display_order": null,
+                                "is_primary": null
+                                }
+                                ],
+             "enquiry_count": 0,
+             "views_count": 4,
+             "viewing_count": 0,
+             "offer_count": 0,
+             "is_free_trial": null,
+             "is_active": true,
+             "is_premium_listing": false,
+             "is_cancelled": null,
+             "date_time_cancelled": null,
+             "is_saved": false
+             },
+             ],
+    "pagination": {
+        "total_business_count": 15,
+        "per_page": 20,
+        "page_count": 1
+    }
+}

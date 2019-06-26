@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SY6-mU-ACu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="xnS-zc-mMP">
+            <objects>
+                <viewController id="SY6-mU-ACu" customClass="BusinessSearchViewController" customModule="Bizdaq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ydq-9h-OJf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmG-Fg-2Yb">
+                                <rect key="frame" x="0.0" y="165" width="375" height="173"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell us what you are looking for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d53-YK-Vb1">
+                                        <rect key="frame" x="16" y="0.0" width="247.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5I-Zv-EG9" customClass="ValidatedTextField" customModule="Bizdaq" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="41" width="343" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="xxm-MC-0F9"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUC-kg-g0Q">
+                                        <rect key="frame" x="16" y="41" width="293" height="56"/>
+                                        <connections>
+                                            <segue destination="0cv-Bw-Ice" kind="show" identifier="categorySelection" id="vWp-kb-dOy"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMe-p4-vcc" customClass="ValidatedTextField" customModule="Bizdaq" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="117" width="343" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="kbw-7x-t7I"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJh-TB-QK4">
+                                        <rect key="frame" x="16" y="117" width="293" height="56"/>
+                                        <connections>
+                                            <segue destination="Kpe-My-z7N" kind="show" identifier="regionSelection" id="n7B-RS-MNI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="uJh-TB-QK4" firstAttribute="centerX" secondItem="uMe-p4-vcc" secondAttribute="centerX" constant="-25" id="2uy-wd-GIF"/>
+                                    <constraint firstItem="oUC-kg-g0Q" firstAttribute="height" secondItem="y5I-Zv-EG9" secondAttribute="height" id="AFE-3I-Dap"/>
+                                    <constraint firstItem="uJh-TB-QK4" firstAttribute="height" secondItem="uMe-p4-vcc" secondAttribute="height" id="Eaa-DF-pGv"/>
+                                    <constraint firstItem="d53-YK-Vb1" firstAttribute="top" secondItem="UmG-Fg-2Yb" secondAttribute="top" id="Imx-Qp-MdW"/>
+                                    <constraint firstItem="uJh-TB-QK4" firstAttribute="centerY" secondItem="uMe-p4-vcc" secondAttribute="centerY" id="MRg-mL-d6x"/>
+                                    <constraint firstItem="uJh-TB-QK4" firstAttribute="width" secondItem="uMe-p4-vcc" secondAttribute="width" constant="-50" id="U4p-ek-GEU"/>
+                                    <constraint firstItem="oUC-kg-g0Q" firstAttribute="centerX" secondItem="y5I-Zv-EG9" secondAttribute="centerX" constant="-25" id="YAH-cx-5y5"/>
+                                    <constraint firstItem="d53-YK-Vb1" firstAttribute="leading" secondItem="UmG-Fg-2Yb" secondAttribute="leading" constant="16" id="aJR-jD-dXi"/>
+                                    <constraint firstItem="uMe-p4-vcc" firstAttribute="top" secondItem="y5I-Zv-EG9" secondAttribute="bottom" constant="20" id="aeU-yq-DKv"/>
+                                    <constraint firstAttribute="trailing" secondItem="y5I-Zv-EG9" secondAttribute="trailing" constant="16" id="bT9-Ti-yzG"/>
+                                    <constraint firstItem="oUC-kg-g0Q" firstAttribute="centerY" secondItem="y5I-Zv-EG9" secondAttribute="centerY" id="cvj-nk-VpY"/>
+                                    <constraint firstItem="y5I-Zv-EG9" firstAttribute="leading" secondItem="UmG-Fg-2Yb" secondAttribute="leading" constant="16" id="d80-1T-wZU"/>
+                                    <constraint firstItem="y5I-Zv-EG9" firstAttribute="top" secondItem="d53-YK-Vb1" secondAttribute="bottom" constant="20" id="gZQ-D5-n98"/>
+                                    <constraint firstItem="uMe-p4-vcc" firstAttribute="leading" secondItem="UmG-Fg-2Yb" secondAttribute="leading" constant="16" id="h88-4O-sgF"/>
+                                    <constraint firstItem="oUC-kg-g0Q" firstAttribute="width" secondItem="y5I-Zv-EG9" secondAttribute="width" constant="-50" id="hNQ-yC-Qco"/>
+                                    <constraint firstAttribute="trailing" secondItem="uMe-p4-vcc" secondAttribute="trailing" constant="16" id="oMX-ON-NwM"/>
+                                    <constraint firstAttribute="bottom" secondItem="uMe-p4-vcc" secondAttribute="bottom" id="xhm-P2-foU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkK-W5-a24">
+                                <rect key="frame" x="16" y="539" width="343" height="48"/>
+                                <color key="backgroundColor" name="bizdaq-blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="E5a-6d-AwK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Browse businesses">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressDoneButton" destination="SY6-mU-ACu" eventType="touchUpInside" id="xex-zE-SD8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UmG-Fg-2Yb" firstAttribute="leading" secondItem="Cqn-YE-KaY" secondAttribute="leading" id="DrS-QB-cIw"/>
+                            <constraint firstItem="Cqn-YE-KaY" firstAttribute="trailing" secondItem="vkK-W5-a24" secondAttribute="trailing" constant="16" id="G72-Od-cvQ"/>
+                            <constraint firstItem="Cqn-YE-KaY" firstAttribute="bottom" secondItem="vkK-W5-a24" secondAttribute="bottom" constant="16" id="QXh-I1-b4F"/>
+                            <constraint firstItem="UmG-Fg-2Yb" firstAttribute="centerY" secondItem="Cqn-YE-KaY" secondAttribute="centerY" constant="-50" id="UdB-F2-Hgl"/>
+                            <constraint firstItem="vkK-W5-a24" firstAttribute="leading" secondItem="Cqn-YE-KaY" secondAttribute="leading" constant="16" id="guw-vj-ocT"/>
+                            <constraint firstItem="Cqn-YE-KaY" firstAttribute="trailing" secondItem="UmG-Fg-2Yb" secondAttribute="trailing" id="k8f-bJ-Km2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cqn-YE-KaY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="4C0-ur-fLd"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="browseButton" destination="vkK-W5-a24" id="xuQ-7p-IpU"/>
+                        <outlet property="locationTextField" destination="uMe-p4-vcc" id="dfe-g2-sYO"/>
+                        <outlet property="sectorTextField" destination="y5I-Zv-EG9" id="gpZ-PP-6nz"/>
+                        <segue destination="LkK-uo-sWn" kind="show" identifier="businessBrowse" id="IoA-8I-KIB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xl-vC-QdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154.40000000000001" y="83.208395802098963"/>
+        </scene>
+        <!--CategorySelection-->
+        <scene sceneID="EPO-r1-rsf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CategorySelection" id="0cv-Bw-Ice" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uLc-3e-Tmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449" y="-46"/>
+        </scene>
+        <!--RegionSelection-->
+        <scene sceneID="2mM-g3-o9A">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegionSelection" id="Kpe-My-z7N" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g4g-Td-jcS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="32"/>
+        </scene>
+        <!--BusinessBrowse-->
+        <scene sceneID="KCH-hD-t8a">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BusinessBrowse" id="LkK-uo-sWn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHh-uq-at3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="235"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="bizdaq-blue">
+            <color red="0.1180000007" green="0.52200001480000002" blue="0.87800002099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

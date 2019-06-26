@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GrantedAccessView" customModule="Bizdaq" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="YOw-UP-i8O" id="5FD-8t-rlv"/>
+                <outlet property="messageButton" destination="bHe-mH-7kQ" id="Ifn-Wa-NeR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tAW-KP-Ocy">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="✔︎ Full access granted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7G3-xM-Mz9">
+                    <rect key="frame" x="16" y="16" width="157" height="18"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                    <color key="textColor" red="0.2156862745" green="0.25882352939999997" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHe-mH-7kQ">
+                    <rect key="frame" x="16" y="144" width="343" height="48"/>
+                    <color key="backgroundColor" red="0.1176470588" green="0.52156862749999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="UmI-74-rcb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                    <state key="normal" title="Message seller">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressMessageButton:" destination="-1" eventType="touchUpInside" id="0GB-M8-Pnd"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YOw-UP-i8O">
+                    <rect key="frame" x="0.0" y="34" width="375" height="110"/>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="Ltw-VM-pb9"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wI6-93-aLt">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zbI-oo-fbC"/>
+                        <outlet property="delegate" destination="-1" id="8kI-Iy-LpN"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="19j-gM-eAw" firstAttribute="trailing" secondItem="bHe-mH-7kQ" secondAttribute="trailing" constant="16" id="0cX-pz-x66"/>
+                <constraint firstItem="7G3-xM-Mz9" firstAttribute="top" secondItem="19j-gM-eAw" secondAttribute="top" constant="16" id="4rC-kO-Cd6"/>
+                <constraint firstItem="19j-gM-eAw" firstAttribute="bottom" secondItem="bHe-mH-7kQ" secondAttribute="bottom" constant="16" id="5pf-OG-MdN"/>
+                <constraint firstItem="19j-gM-eAw" firstAttribute="trailing" secondItem="YOw-UP-i8O" secondAttribute="trailing" id="8al-KL-nOg"/>
+                <constraint firstItem="bHe-mH-7kQ" firstAttribute="leading" secondItem="19j-gM-eAw" secondAttribute="leading" constant="16" id="Der-fB-ebC"/>
+                <constraint firstItem="YOw-UP-i8O" firstAttribute="leading" secondItem="19j-gM-eAw" secondAttribute="leading" id="Mqx-m5-Va6"/>
+                <constraint firstItem="bHe-mH-7kQ" firstAttribute="top" secondItem="YOw-UP-i8O" secondAttribute="bottom" id="Tnk-lh-e7j"/>
+                <constraint firstItem="7G3-xM-Mz9" firstAttribute="leading" secondItem="19j-gM-eAw" secondAttribute="leading" constant="16" id="l7B-rd-opF"/>
+                <constraint firstItem="YOw-UP-i8O" firstAttribute="top" secondItem="7G3-xM-Mz9" secondAttribute="bottom" id="nN7-00-Z2e"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="19j-gM-eAw"/>
+            <point key="canvasLocation" x="37.5" y="-270.5"/>
+        </view>
+    </objects>
+</document>

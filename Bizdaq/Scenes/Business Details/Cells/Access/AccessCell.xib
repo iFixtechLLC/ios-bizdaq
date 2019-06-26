@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccessCell" rowHeight="140" id="1Cn-PU-JT9" customClass="AccessCell" customModule="Bizdaq" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Cn-PU-JT9" id="cv3-3d-jps">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxx-hK-fGr" customClass="AccessView" customModule="Bizdaq" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
+                        <color key="backgroundColor" red="1" green="0.1925764401" blue="0.2210478427" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.058823529409999999" green="0.51764705879999995" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jxx-hK-fGr" secondAttribute="trailing" id="Nku-CU-wq2"/>
+                    <constraint firstItem="jxx-hK-fGr" firstAttribute="leading" secondItem="cv3-3d-jps" secondAttribute="leading" id="QTP-dX-9N1"/>
+                    <constraint firstAttribute="bottom" secondItem="jxx-hK-fGr" secondAttribute="bottom" id="emm-Zn-XdE"/>
+                    <constraint firstItem="jxx-hK-fGr" firstAttribute="top" secondItem="cv3-3d-jps" secondAttribute="top" id="jLA-h3-Oj5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.87787219902857139" blue="0.30970982142857145" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="accessView" destination="jxx-hK-fGr" id="AIx-hY-5HD"/>
+            </connections>
+            <point key="canvasLocation" x="-53.5" y="260"/>
+        </tableViewCell>
+    </objects>
+</document>

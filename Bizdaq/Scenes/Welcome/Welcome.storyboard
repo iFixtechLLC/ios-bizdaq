@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f18-cs-CYW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="s42-wK-HU5">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="f18-cs-CYW" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5RH-MX-Qsw">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hHz-Dl-Dh5" kind="relationship" relationship="rootViewController" id="sZb-Nt-RJS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Gg-ti-JKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5420" y="-520"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="x2d-j1-ofJ">
+            <objects>
+                <viewController id="hHz-Dl-Dh5" customClass="WelcomeViewController" customModule="Bizdaq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wps-kB-w45">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yk-h8-W42">
+                                <rect key="frame" x="16" y="603" width="343" height="48"/>
+                                <color key="backgroundColor" name="bizdaq-blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="3wp-jA-ccH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="0.98384477179999996" blue="0.98255568049999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressBottomButton" destination="hHz-Dl-Dh5" eventType="touchUpInside" id="dQ9-Yp-R0b"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrQ-ki-fGB">
+                                <rect key="frame" x="95" y="560.5" width="185.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.98384477179999996" blue="0.98255568049999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzg-Mb-rC6">
+                                <rect key="frame" x="0.0" y="145" width="375" height="245.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-screen-logo" translatesAutoresizingMaskIntoConstraints="NO" id="VEa-gk-oRH">
+                                        <rect key="frame" x="96.5" y="0.0" width="182" height="44"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="bizdaq-blue"/>
+                                <constraints>
+                                    <constraint firstItem="VEa-gk-oRH" firstAttribute="centerX" secondItem="Tzg-Mb-rC6" secondAttribute="centerX" id="YRe-94-gJp"/>
+                                    <constraint firstItem="VEa-gk-oRH" firstAttribute="top" secondItem="Tzg-Mb-rC6" secondAttribute="top" id="jhI-uE-jDv"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uej-Xi-142">
+                                <rect key="frame" x="16" y="490.5" width="343" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="A7y-k6-VqY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressTopButton" destination="hHz-Dl-Dh5" eventType="touchUpInside" id="zku-fs-vwK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="bizdaq-blue"/>
+                        <constraints>
+                            <constraint firstItem="idF-td-OlT" firstAttribute="trailing" secondItem="8yk-h8-W42" secondAttribute="trailing" constant="16" id="2YF-Kr-hWj"/>
+                            <constraint firstItem="Uej-Xi-142" firstAttribute="width" secondItem="8yk-h8-W42" secondAttribute="width" id="9iF-h0-kYe"/>
+                            <constraint firstItem="8yk-h8-W42" firstAttribute="top" secondItem="rrQ-ki-fGB" secondAttribute="bottom" constant="24" id="CuV-sj-JHc"/>
+                            <constraint firstItem="rrQ-ki-fGB" firstAttribute="centerX" secondItem="idF-td-OlT" secondAttribute="centerX" id="Lpq-qQ-Rml"/>
+                            <constraint firstItem="Uej-Xi-142" firstAttribute="centerX" secondItem="idF-td-OlT" secondAttribute="centerX" id="PNS-1I-jbl"/>
+                            <constraint firstItem="Tzg-Mb-rC6" firstAttribute="top" secondItem="idF-td-OlT" secondAttribute="top" constant="125" id="PSd-Ue-ghn"/>
+                            <constraint firstItem="Uej-Xi-142" firstAttribute="top" secondItem="Tzg-Mb-rC6" secondAttribute="bottom" constant="100" id="Vaw-le-t3G"/>
+                            <constraint firstItem="Tzg-Mb-rC6" firstAttribute="width" secondItem="wps-kB-w45" secondAttribute="width" id="kxB-MN-f9C"/>
+                            <constraint firstItem="Tzg-Mb-rC6" firstAttribute="centerX" secondItem="idF-td-OlT" secondAttribute="centerX" id="l2j-Op-ziy"/>
+                            <constraint firstItem="8yk-h8-W42" firstAttribute="leading" secondItem="idF-td-OlT" secondAttribute="leading" constant="16" id="mRP-ZX-dhS"/>
+                            <constraint firstItem="idF-td-OlT" firstAttribute="bottom" secondItem="8yk-h8-W42" secondAttribute="bottom" constant="16" id="tWR-Xv-fIh"/>
+                            <constraint firstItem="rrQ-ki-fGB" firstAttribute="top" secondItem="Uej-Xi-142" secondAttribute="bottom" constant="22" id="zFY-wS-x1D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="idF-td-OlT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5bI-m8-eMv"/>
+                    <connections>
+                        <outlet property="bottomButton" destination="8yk-h8-W42" id="8nz-4g-86U"/>
+                        <outlet property="topButton" destination="Uej-Xi-142" id="B1t-WG-aE1"/>
+                        <segue destination="kuC-Q3-o8b" kind="show" identifier="onboarding" id="Nvg-So-hTA"/>
+                        <segue destination="xgY-XH-MNa" kind="show" identifier="login" id="oWi-td-v4l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OqC-dG-rga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4626.3999999999996" y="-519.49025487256381"/>
+        </scene>
+        <!--Onboarding-->
+        <scene sceneID="chx-XJ-GIg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Onboarding" id="kuC-Q3-o8b" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdt-IU-u76" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4066" y="-577"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="oOH-Lq-yTg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="Login" id="xgY-XH-MNa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dR7-Ku-Me3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4097" y="-464"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash-screen-logo" width="182" height="44"/>
+        <namedColor name="bizdaq-blue">
+            <color red="0.11800000071525574" green="0.5220000147819519" blue="0.87800002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

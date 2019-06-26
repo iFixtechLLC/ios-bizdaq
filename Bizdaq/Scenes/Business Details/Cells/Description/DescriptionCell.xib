@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="210" id="7fp-gF-RfR" customClass="DescriptionCell" customModule="Bizdaq" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7fp-gF-RfR" id="4Mr-I1-uQa">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Business Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmM-xc-acD">
+                        <rect key="frame" x="16" y="16" width="343" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9me-MT-aZa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" red="0.21568627450980393" green="0.25882352941176467" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDP-Jm-GXb">
+                        <rect key="frame" x="193" y="163.5" width="166" height="30"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.23529411764705882" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="166" id="mSi-iZ-hM6"/>
+                            <constraint firstAttribute="height" constant="30" id="wrO-rq-A24"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <state key="normal" title="Read full description">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="didPressReadFullButton" destination="7fp-gF-RfR" eventType="touchUpInside" id="eZF-14-MfV"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYm-s5-yeG">
+                        <rect key="frame" x="16" y="53" width="343" height="94.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="gFV-Hk-t3O"/>
+                        </constraints>
+                        <string key="text">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sapien lorem, tincidunt vel odio eget, efficitur luctus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum dui nec purus scelerisque, ut ultrices enim consequat. Fusce blandit ipsum eros, a fringilla dui finibus in. In viverra mattis tincidunt. Quisque rhoncus ipsum vel mauris ornare, non rutrum nulla rutrum. In ut nibh tellus. Phasellus congue ante non leo hendrerit molestie. Cras et dolor id quam malesuada porta rhoncus vel diam. Donec eget pretium ligula. Vivamus suscipit diam at blandit aliquam. Phasellus in tincidunt est, sit amet consectetur nisl.</string>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kDP-Jm-GXb" firstAttribute="top" secondItem="rYm-s5-yeG" secondAttribute="bottom" constant="16" id="83c-3s-Gdc"/>
+                    <constraint firstItem="PmM-xc-acD" firstAttribute="leading" secondItem="4Mr-I1-uQa" secondAttribute="leading" constant="16" id="BFu-2r-vtQ"/>
+                    <constraint firstAttribute="trailing" secondItem="PmM-xc-acD" secondAttribute="trailing" constant="16" id="XE1-tm-b9m"/>
+                    <constraint firstItem="rYm-s5-yeG" firstAttribute="leading" secondItem="4Mr-I1-uQa" secondAttribute="leading" constant="16" id="XiN-el-8lK"/>
+                    <constraint firstAttribute="trailing" secondItem="rYm-s5-yeG" secondAttribute="trailing" constant="16" id="eSI-kg-tFD"/>
+                    <constraint firstAttribute="bottom" secondItem="kDP-Jm-GXb" secondAttribute="bottom" constant="16" id="lWR-1h-UXC"/>
+                    <constraint firstAttribute="trailing" secondItem="kDP-Jm-GXb" secondAttribute="trailing" constant="16" id="mEk-SU-jZw"/>
+                    <constraint firstItem="PmM-xc-acD" firstAttribute="top" secondItem="4Mr-I1-uQa" secondAttribute="top" constant="16" id="nqO-FT-Iik"/>
+                    <constraint firstItem="rYm-s5-yeG" firstAttribute="top" secondItem="PmM-xc-acD" secondAttribute="bottom" constant="16" id="thi-od-hXF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="rYm-s5-yeG" id="hr9-Aa-Dcp"/>
+                <outlet property="descriptionLabelHeightConstraint" destination="gFV-Hk-t3O" id="6Gr-Qm-9NA"/>
+                <outlet property="readFullButton" destination="kDP-Jm-GXb" id="Ltt-Td-J4b"/>
+            </connections>
+            <point key="canvasLocation" x="124" y="155.62218890554723"/>
+        </tableViewCell>
+    </objects>
+</document>

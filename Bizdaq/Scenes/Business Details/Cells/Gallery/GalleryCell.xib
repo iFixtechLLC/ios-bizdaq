@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GalleryCell" rowHeight="140" id="Puf-oF-GSD" customClass="GalleryCell" customModule="Bizdaq" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Puf-oF-GSD" id="J92-Gw-g6x">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FiJ-s2-o0e" customClass="ImageGalleryView" customModule="Bizdaq" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="BpX-Tg-EUv"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYL-93-P5y">
+                        <rect key="frame" x="8" y="8" width="114.5" height="34.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECOMMENDED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gy8-Sq-sfL">
+                                <rect key="frame" x="10" y="10" width="94.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="bizdaq-dark-blue"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gy8-Sq-sfL" secondAttribute="bottom" constant="10" id="WLg-VJ-X3q"/>
+                            <constraint firstItem="gy8-Sq-sfL" firstAttribute="top" secondItem="UYL-93-P5y" secondAttribute="top" constant="10" id="j5M-Qj-b1O"/>
+                            <constraint firstItem="gy8-Sq-sfL" firstAttribute="leading" secondItem="UYL-93-P5y" secondAttribute="leading" constant="10" id="m59-GB-ejV"/>
+                            <constraint firstAttribute="trailing" secondItem="gy8-Sq-sfL" secondAttribute="trailing" constant="10" id="zG3-o9-JQk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UYL-93-P5y" firstAttribute="top" secondItem="J92-Gw-g6x" secondAttribute="top" constant="8" id="23u-j1-SgJ"/>
+                    <constraint firstAttribute="bottom" secondItem="FiJ-s2-o0e" secondAttribute="bottom" id="2ol-cu-RyO"/>
+                    <constraint firstAttribute="trailing" secondItem="FiJ-s2-o0e" secondAttribute="trailing" id="KPz-Rx-usq"/>
+                    <constraint firstItem="FiJ-s2-o0e" firstAttribute="top" secondItem="J92-Gw-g6x" secondAttribute="top" id="OaD-An-6Fu"/>
+                    <constraint firstItem="UYL-93-P5y" firstAttribute="leading" secondItem="J92-Gw-g6x" secondAttribute="leading" constant="8" id="rsA-Rq-QTv"/>
+                    <constraint firstItem="FiJ-s2-o0e" firstAttribute="leading" secondItem="J92-Gw-g6x" secondAttribute="leading" id="xnm-dp-Qva"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageGalleryView" destination="FiJ-s2-o0e" id="wUq-tf-wVB"/>
+                <outlet property="isRecommendedView" destination="UYL-93-P5y" id="Dja-Qi-ADR"/>
+            </connections>
+            <point key="canvasLocation" x="-53.5" y="260"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="bizdaq-dark-blue">
+            <color red="0.0040000001900000002" green="0.23499999939999999" blue="0.45100000499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

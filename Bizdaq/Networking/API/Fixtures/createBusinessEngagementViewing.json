@@ -1,0 +1,21 @@
+{
+    "success":true,
+    "data":
+        {
+            "BusinessEngagementViewing":
+                {
+                    "id":133,
+                    "business_engagement_id":7121,
+                    "date_time_option1":"2018-06-21 10:00:00",
+                    "date_time_option2":"2018-06-21 11:00:00",
+                    "date_time_option3":"2018-06-21 12:00:00",
+                    "is_viewing_date_time_options_submitted":true,
+                    "date_time_viewing_date_time_options_submitted":"2018-06-01 10:52:11",
+                    "is_viewing_date_time_options_reviewed":null,
+                    "is_viewing_date_time_agreed":null,
+                    "viewing_date_time_options_reason_for_rejection":null,
+                    "is_cancelled":null,
+                    "cancelled_by_name":null
+                }
+        }
+}

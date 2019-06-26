@@ -1,0 +1,23 @@
+{
+    "success":true,
+    "data":
+    {
+        "User":
+        {
+            "id":6651,
+            "token":"9433a3b812260b2ae756",
+            "PublicUser":
+            {
+                "id":6699,
+                "first_name":"Aaron",
+                "last_name":"Newton",
+                "email":"aaron.buildad-api10@mybizdaq.com",
+                "PublicUserSellerProfile":
+                {
+                    "id":4169
+                }
+            }
+        },
+        "business_id":4768
+    }
+}

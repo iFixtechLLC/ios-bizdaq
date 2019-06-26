@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1QP-qk-bT0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="tsp-jX-vVp">
+            <objects>
+                <navigationController id="1QP-qk-bT0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="URO-aJ-Ta3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9VJ-6E-LW1" kind="relationship" relationship="rootViewController" id="sd7-LS-1vW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOu-JL-A3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-762" y="161"/>
+        </scene>
+        <!--Log In-->
+        <scene sceneID="wH7-Dm-vnl">
+            <objects>
+                <viewController storyboardIdentifier="Login" id="9VJ-6E-LW1" customClass="LoginViewController" customModule="Bizdaq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oci-ma-vlD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in or create a free account to save businesses to your favourites, make offers or to sell your business." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IuH-x1-2Dp" userLabel="login Text view">
+                                <rect key="frame" x="16" y="89" width="343" height="55.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Zo-nj-GM4" customClass="ValidatedTextField" customModule="Bizdaq" customModuleProvider="target">
+                                <rect key="frame" x="16" y="169.5" width="343" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="GXL-s3-9OA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTV-Z8-BaE" customClass="ValidatedTextField" customModule="Bizdaq" customModuleProvider="target">
+                                <rect key="frame" x="16" y="247" width="343" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="WjZ-d8-2Is"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgD-ZT-q6h">
+                                <rect key="frame" x="16" y="355" width="343" height="48"/>
+                                <color key="backgroundColor" name="bizdaq-dark-grey"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ih1-CM-Usq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressLoginButton:" destination="9VJ-6E-LW1" eventType="touchUpInside" id="40R-Cv-3EB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUj-ye-nrZ">
+                                <rect key="frame" x="16" y="539" width="343" height="48"/>
+                                <color key="backgroundColor" name="bizdaq-dark-blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="vvc-OX-I1T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Register for a free account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jZm-9S-sy8" kind="show" identifier="register" id="BRw-Ci-kHc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9F-QU-HuJ">
+                                <rect key="frame" x="16" y="603" width="343" height="48"/>
+                                <color key="backgroundColor" name="bizdaq-dark-blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="A6Y-nf-rZn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Register for a seller account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JEj-kk-0y6" kind="show" identifier="registerSeller" id="GNF-Gh-z3p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvd-Zg-vFC">
+                                <rect key="frame" x="16" y="312" width="208" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="07g-lU-EOa"/>
+                                    <constraint firstAttribute="height" constant="30" id="0hd-FH-D41"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="forgotPasswordBtn:" destination="9VJ-6E-LW1" eventType="touchUpInside" id="wuS-HG-MHN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FORGOTTEN PASSWORD?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpZ-vJ-EOO">
+                                <rect key="frame" x="16" y="320" width="154.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <color key="textColor" red="0.11372549019607843" green="0.52549019607843139" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M9F-QU-HuJ" firstAttribute="top" secondItem="PUj-ye-nrZ" secondAttribute="bottom" constant="16" id="3EX-D3-1zS"/>
+                            <constraint firstItem="zvd-Zg-vFC" firstAttribute="centerY" secondItem="CpZ-vJ-EOO" secondAttribute="centerY" id="3J8-xN-HTO"/>
+                            <constraint firstItem="Bx2-XJ-500" firstAttribute="trailing" secondItem="IuH-x1-2Dp" secondAttribute="trailing" constant="16" id="Czf-EV-0jC"/>
+                            <constraint firstItem="CpZ-vJ-EOO" firstAttribute="top" secondItem="RTV-Z8-BaE" secondAttribute="bottom" constant="17" id="Den-Ui-4FI"/>
+                            <constraint firstItem="IuH-x1-2Dp" firstAttribute="top" secondItem="Bx2-XJ-500" secondAttribute="top" constant="25" id="Ig9-iw-lsi"/>
+                            <constraint firstItem="KgD-ZT-q6h" firstAttribute="leading" secondItem="Bx2-XJ-500" secondAttribute="leading" constant="16" id="Ils-dx-K6q"/>
+                            <constraint firstItem="CpZ-vJ-EOO" firstAttribute="leading" secondItem="Bx2-XJ-500" secondAttribute="leading" constant="16" id="LkH-cI-2rF"/>
+                            <constraint firstItem="0Zo-nj-GM4" firstAttribute="leading" secondItem="Bx2-XJ-500" secondAttribute="leading" constant="16" id="M6l-6T-3hw"/>
+                            <constraint firstItem="Bx2-XJ-500" firstAttribute="bottom" secondItem="M9F-QU-HuJ" secondAttribute="bottom" constant="16" id="SWC-pF-TNa"/>
+                            <constraint firstItem="Bx2-XJ-500" firstAttribute="trailing" secondItem="RTV-Z8-BaE" secondAttribute="trailing" constant="16" id="U5K-TU-ndX"/>
+                            <constraint firstItem="Bx2-XJ-500" firstAttribute="trailing" secondItem="M9F-QU-HuJ" secondAttribute="trailing" constant="16" id="WuA-lA-7OV"/>
+                            <constraint firstItem="0Zo-nj-GM4" firstAttribute="top" secondItem="IuH-x1-2Dp" secondAttribute="bottom" constant="25" id="eHf-eU-Occ"/>
+                            <constraint firstItem="zvd-Zg-vFC" firstAttribute="leading" secondItem="Bx2-XJ-500" secondAttribute="leading" constant="16" id="f37-cd-R7I"/>
+                            <constraint firstItem="RTV-Z8-BaE" firstAttribute="top" secondItem="0Zo-nj-GM4" secondAttribute="bottom" constant="21.5" id="hdy-h2-Tik"/>
+                            <constraint firstItem="PUj-ye-nrZ" firstAttribute="leading" secondItem="Bx2-XJ-500" secondAttribute="leading" constant="16" id="k7y-Kr-D4W"/>
+                            <constraint firstItem="M9F-QU-HuJ" firstAttribute="leading" secondItem="Bx2-XJ-500" secondAttribute="leading" constant="16" id="n0x-rD-Qnf"/>
+                            <constraint firstItem="RTV-Z8-BaE" firstAttribute="leading" secondItem="Bx2-XJ-500" secondAttribute="leading" constant="16" id="oo0-jq-tRT"/>
+                            <constraint firstItem="Bx2-XJ-500" firstAttribute="trailing" secondItem="PUj-ye-nrZ" secondAttribute="trailing" constant="16" id="rGd-J8-wNE"/>
+                            <constraint firstItem="Bx2-XJ-500" firstAttribute="trailing" secondItem="KgD-ZT-q6h" secondAttribute="trailing" constant="16" id="rO2-lp-br6"/>
+                            <constraint firstItem="Bx2-XJ-500" firstAttribute="trailing" secondItem="0Zo-nj-GM4" secondAttribute="trailing" constant="16" id="u0s-ud-uFZ"/>
+                            <constraint firstItem="KgD-ZT-q6h" firstAttribute="top" secondItem="CpZ-vJ-EOO" secondAttribute="bottom" constant="21" id="udN-pF-Dxl"/>
+                            <constraint firstItem="IuH-x1-2Dp" firstAttribute="leading" secondItem="Bx2-XJ-500" secondAttribute="leading" constant="16" id="whN-zH-JSk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bx2-XJ-500"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Log In" id="Nn3-3h-AfW">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="ajW-UK-ePX">
+                            <connections>
+                                <action selector="didPressCancelButton:" destination="9VJ-6E-LW1" id="B6I-CR-KPA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="0Zo-nj-GM4" id="9cm-qk-Or0"/>
+                        <outlet property="loginButton" destination="KgD-ZT-q6h" id="MpN-Ub-dA6"/>
+                        <outlet property="passwordTextField" destination="RTV-Z8-BaE" id="Bw8-qU-c7u"/>
+                        <outlet property="registerButton" destination="PUj-ye-nrZ" id="1lB-2C-RAJ"/>
+                        <segue destination="6a6-cn-yTX" kind="show" identifier="businessBrowse" id="aV2-dh-5cT"/>
+                        <segue destination="YXI-VX-SLy" kind="show" identifier="sellerDash" id="mbb-i8-TZV"/>
+                        <segue destination="YOf-Vi-MEx" kind="show" identifier="buyerDash" id="zse-kK-lSo"/>
+                        <segue destination="pG2-lq-dVT" kind="show" identifier="recoverPassword" id="s0r-nA-zdk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nef-wc-jM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.8000000000000007" y="160.56971514242881"/>
+        </scene>
+        <!--BuyerRegister-->
+        <scene sceneID="URt-69-O7d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Register" referencedIdentifier="BuyerRegister" id="jZm-9S-sy8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIF-0d-bn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="107"/>
+        </scene>
+        <!--BusinessBrowse-->
+        <scene sceneID="4so-Jd-ZN9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BusinessBrowse" id="6a6-cn-yTX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vGs-dr-WMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="206"/>
+        </scene>
+        <!--SellersDashboard-->
+        <scene sceneID="d37-jF-EGY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SellersDashboard" id="YXI-VX-SLy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Pc-F7-tNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="255"/>
+        </scene>
+        <!--BuyersDashboard-->
+        <scene sceneID="cEh-7H-wuX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BuyersDashboard" id="YOf-Vi-MEx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1v8-gj-ZQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="310"/>
+        </scene>
+        <!--ForgotPassword-->
+        <scene sceneID="Ihc-mN-NPl">
+            <objects>
+                <viewController title="ForgotPassword" id="pG2-lq-dVT" customClass="ForgotPasswordViewController" customModule="Bizdaq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Kn-rG-ERG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdA-85-pgu">
+                                <rect key="frame" x="16" y="226" width="343" height="48"/>
+                                <color key="backgroundColor" name="bizdaq-dark-blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="lbz-4x-uRT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Recover Password">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="recoverBtn:" destination="pG2-lq-dVT" eventType="touchUpInside" id="TUe-kY-cjT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use this to send an email so you area able to recover your password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpa-Wm-EZI">
+                                <rect key="frame" x="16" y="82" width="343" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbc-cy-rXW" customClass="ValidatedTextField" customModule="Bizdaq" customModuleProvider="target">
+                                <rect key="frame" x="16" y="155" width="343" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="jDC-7R-9Ji"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dbc-cy-rXW" firstAttribute="top" secondItem="ao0-Oh-oug" secondAttribute="top" constant="91" id="1iH-cr-H2E"/>
+                            <constraint firstItem="zpa-Wm-EZI" firstAttribute="leading" secondItem="ao0-Oh-oug" secondAttribute="leading" constant="16" id="36s-FP-A8I"/>
+                            <constraint firstItem="PdA-85-pgu" firstAttribute="top" secondItem="dbc-cy-rXW" secondAttribute="bottom" constant="15" id="7cn-Fh-nuK"/>
+                            <constraint firstItem="dbc-cy-rXW" firstAttribute="leading" secondItem="ao0-Oh-oug" secondAttribute="leading" constant="16" id="E1J-6w-Ga6"/>
+                            <constraint firstItem="dbc-cy-rXW" firstAttribute="top" secondItem="zpa-Wm-EZI" secondAttribute="bottom" constant="8" id="INL-Kx-vpa"/>
+                            <constraint firstItem="PdA-85-pgu" firstAttribute="leading" secondItem="ao0-Oh-oug" secondAttribute="leading" constant="16" id="JIP-Dx-BLw"/>
+                            <constraint firstItem="zpa-Wm-EZI" firstAttribute="top" secondItem="ao0-Oh-oug" secondAttribute="top" constant="18" id="dG3-dP-C6R"/>
+                            <constraint firstItem="ao0-Oh-oug" firstAttribute="trailing" secondItem="dbc-cy-rXW" secondAttribute="trailing" constant="16" id="f1i-TS-FRI"/>
+                            <constraint firstItem="ao0-Oh-oug" firstAttribute="trailing" secondItem="PdA-85-pgu" secondAttribute="trailing" constant="16" id="mG2-5v-hDk"/>
+                            <constraint firstItem="ao0-Oh-oug" firstAttribute="trailing" secondItem="zpa-Wm-EZI" secondAttribute="trailing" constant="16" id="yK9-al-Uk1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ao0-Oh-oug"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="dbc-cy-rXW" id="iAF-CH-BkZ"/>
+                        <outlet property="submitBtn" destination="PdA-85-pgu" id="xHK-aK-dcO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Gk-Ua-uwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743.20000000000005" y="788.45577211394311"/>
+        </scene>
+        <!--SellerRegister-->
+        <scene sceneID="Ktd-kX-0ak">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Register" referencedIdentifier="SellerRegister" id="JEj-kk-0y6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DiB-7y-ixW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685" y="160"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="bizdaq-dark-blue">
+            <color red="0.0040000001899898052" green="0.23499999940395355" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bizdaq-dark-grey">
+            <color red="0.21600000560283661" green="0.25900000333786011" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

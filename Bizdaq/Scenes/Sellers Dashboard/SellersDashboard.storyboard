@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q8g-tq-z3c">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ARz-Dt-K0R">
+            <objects>
+                <navigationController id="q8g-tq-z3c" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="VB5-0J-tTd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xnw-zo-YNi" kind="relationship" relationship="rootViewController" id="Wg9-gb-b7n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0K-Ln-NrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1081" y="228"/>
+        </scene>
+        <!--Sellers Dashboard View Controller-->
+        <scene sceneID="fEl-yS-c4S">
+            <objects>
+                <viewController id="xnw-zo-YNi" customClass="SellersDashboardViewController" customModule="Bizdaq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="46b-xl-hiO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPr-kR-ZzZ" customClass="SellersOptionsView" customModule="Bizdaq" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="32J-AZ-KQe">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kFU-W5-5gg">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="oPr-kR-ZzZ" id="E0m-5B-F5u"/>
+                                            <outlet property="delegate" destination="oPr-kR-ZzZ" id="6kF-nP-Szi"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" name="bizdaq-blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="32J-AZ-KQe" secondAttribute="bottom" id="0lO-pd-ENs"/>
+                                    <constraint firstAttribute="height" constant="110" id="FEW-Im-ijD"/>
+                                    <constraint firstItem="32J-AZ-KQe" firstAttribute="top" secondItem="oPr-kR-ZzZ" secondAttribute="top" id="Fgw-2z-azs"/>
+                                    <constraint firstAttribute="trailing" secondItem="32J-AZ-KQe" secondAttribute="trailing" id="KoA-gA-5m4"/>
+                                    <constraint firstItem="32J-AZ-KQe" firstAttribute="leading" secondItem="oPr-kR-ZzZ" secondAttribute="leading" id="W8N-4c-KMl"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="collectionView" destination="32J-AZ-KQe" id="aN5-l9-iaK"/>
+                                </connections>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t0h-VM-S3l">
+                                <rect key="frame" x="0.0" y="110" width="375" height="493"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xnw-zo-YNi" id="rxv-gL-33F"/>
+                                    <outlet property="delegate" destination="xnw-zo-YNi" id="CeS-kv-Hgo"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t0h-VM-S3l" firstAttribute="leading" secondItem="dA1-MQ-a8R" secondAttribute="leading" id="2T6-NL-TaE"/>
+                            <constraint firstItem="oPr-kR-ZzZ" firstAttribute="leading" secondItem="dA1-MQ-a8R" secondAttribute="leading" id="5Fv-Dj-dEa"/>
+                            <constraint firstItem="dA1-MQ-a8R" firstAttribute="trailing" secondItem="oPr-kR-ZzZ" secondAttribute="trailing" id="9wN-rJ-XfE"/>
+                            <constraint firstItem="t0h-VM-S3l" firstAttribute="top" secondItem="oPr-kR-ZzZ" secondAttribute="bottom" id="BVG-8D-TsE"/>
+                            <constraint firstItem="oPr-kR-ZzZ" firstAttribute="top" secondItem="dA1-MQ-a8R" secondAttribute="top" id="VaO-hD-EK7"/>
+                            <constraint firstItem="dA1-MQ-a8R" firstAttribute="trailing" secondItem="t0h-VM-S3l" secondAttribute="trailing" id="aiX-Gy-x5X"/>
+                            <constraint firstItem="dA1-MQ-a8R" firstAttribute="bottom" secondItem="t0h-VM-S3l" secondAttribute="bottom" id="zdb-pi-7ET"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dA1-MQ-a8R"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ir-TK-ACX">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="navigation-menu-button" id="oWP-dS-O3a">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didPressMenuButton:" destination="xnw-zo-YNi" id="hMH-Rp-CVy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="optionsView" destination="oPr-kR-ZzZ" id="BmA-Dl-qfE"/>
+                        <outlet property="tableView" destination="t0h-VM-S3l" id="uc9-yd-hez"/>
+                        <segue destination="aAE-qi-w3l" kind="show" identifier="buildAdvert" id="FdX-vJ-RvC"/>
+                        <segue destination="k8M-UD-JP1" kind="show" identifier="yourAdvert" id="TYw-cI-MkS"/>
+                        <segue destination="7Ca-Pl-V73" kind="show" identifier="buyerEngagements" id="wpM-by-BDA"/>
+                        <segue destination="HeL-Vu-du4" kind="show" identifier="offersList" id="zvp-2Y-DcY"/>
+                        <segue destination="NCh-yv-NXn" kind="show" identifier="marketing" id="bGK-TR-SXN"/>
+                        <segue destination="xQR-uD-qCf" kind="show" identifier="messages" id="tQZ-Oy-gCN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vso-D0-psk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-279.19999999999999" y="226.23688155922042"/>
+        </scene>
+        <!--Buyer Engagements-->
+        <scene sceneID="sxl-Pq-PPV">
+            <objects>
+                <viewController title="Buyer Engagements" id="7Ca-Pl-V73" customClass="BuyerEngagementsViewController" customModule="Bizdaq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Q9-26-4F1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjq-w0-3Ao">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jta-H1-4Ws" customClass="ValidatedTextField" customModule="Bizdaq" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="343" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="9Y2-CZ-kzg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jta-H1-4Ws" secondAttribute="bottom" constant="16" id="1p6-Fj-4zx"/>
+                                    <constraint firstAttribute="trailing" secondItem="jta-H1-4Ws" secondAttribute="trailing" constant="16" id="5I6-N9-xeg"/>
+                                    <constraint firstItem="jta-H1-4Ws" firstAttribute="leading" secondItem="qjq-w0-3Ao" secondAttribute="leading" constant="16" id="ChF-LQ-Qns"/>
+                                    <constraint firstItem="jta-H1-4Ws" firstAttribute="top" secondItem="qjq-w0-3Ao" secondAttribute="top" constant="16" id="ziS-W1-rPX"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UcI-hU-vnp">
+                                <rect key="frame" x="0.0" y="88" width="375" height="515"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7Ca-Pl-V73" id="nSY-Xv-uXX"/>
+                                    <outlet property="delegate" destination="7Ca-Pl-V73" id="tQV-DW-BAF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qjq-w0-3Ao" firstAttribute="top" secondItem="DEJ-Uc-rXe" secondAttribute="top" id="6GE-5Q-aLq"/>
+                            <constraint firstItem="DEJ-Uc-rXe" firstAttribute="trailing" secondItem="qjq-w0-3Ao" secondAttribute="trailing" id="HOh-11-p9F"/>
+                            <constraint firstItem="UcI-hU-vnp" firstAttribute="leading" secondItem="DEJ-Uc-rXe" secondAttribute="leading" id="Iqn-14-sNh"/>
+                            <constraint firstItem="DEJ-Uc-rXe" firstAttribute="bottom" secondItem="UcI-hU-vnp" secondAttribute="bottom" id="f5x-7C-JB5"/>
+                            <constraint firstItem="UcI-hU-vnp" firstAttribute="top" secondItem="qjq-w0-3Ao" secondAttribute="bottom" id="gsC-4K-2qb"/>
+                            <constraint firstItem="qjq-w0-3Ao" firstAttribute="leading" secondItem="DEJ-Uc-rXe" secondAttribute="leading" id="mLv-kf-aLA"/>
+                            <constraint firstItem="DEJ-Uc-rXe" firstAttribute="trailing" secondItem="UcI-hU-vnp" secondAttribute="trailing" id="zBX-IX-6ob"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DEJ-Uc-rXe"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Buyer Engagements" id="mrj-dW-8Bx">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="navigation-back" id="ebR-Qr-6CV">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didPressBackButton:" destination="7Ca-Pl-V73" id="X6M-r5-X2K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchTextField" destination="jta-H1-4Ws" id="tXi-3d-aTL"/>
+                        <outlet property="tableView" destination="UcI-hU-vnp" id="LNY-8v-BSo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vdc-RC-h7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-279.19999999999999" y="962.96851574212906"/>
+        </scene>
+        <!--Offers-->
+        <scene sceneID="Bug-Wm-dgY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Offers" id="HeL-Vu-du4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYi-Kk-cjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="226" y="150"/>
+        </scene>
+        <!--BuildAdvert-->
+        <scene sceneID="48F-9P-NHt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BuildAdvert" referencedIdentifier="BuildAdvert" id="aAE-qi-w3l" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGy-cf-JIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="253" y="227"/>
+        </scene>
+        <!--YourAdvert-->
+        <scene sceneID="QKG-aX-icH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="YourAdvert" id="k8M-UD-JP1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ysc-VA-KBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250" y="298"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="4S3-4D-tti">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Messages" id="xQR-uD-qCf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYV-mm-Qbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="-28"/>
+        </scene>
+        <!--Marketing-->
+        <scene sceneID="swA-ge-heP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Marketing" id="NCh-yv-NXn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGc-RZ-MHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="87"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navigation-back" width="8" height="12"/>
+        <image name="navigation-menu-button" width="18" height="12"/>
+        <namedColor name="bizdaq-blue">
+            <color red="0.11800000071525574" green="0.5220000147819519" blue="0.87800002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

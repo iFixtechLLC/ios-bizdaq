@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u2O-vz-wVE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages-->
+        <scene sceneID="Z2i-Xt-b2t">
+            <objects>
+                <viewController id="u2O-vz-wVE" customClass="ConversationListViewController" customModule="Bizdaq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DbK-zP-XMb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFE-ft-MHb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgz-IQ-UiF" customClass="ValidatedTextField" customModule="Bizdaq" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="343" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="25S-nY-Fvc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bgz-IQ-UiF" firstAttribute="top" secondItem="eFE-ft-MHb" secondAttribute="top" constant="16" id="W8o-OC-4mB"/>
+                                    <constraint firstAttribute="bottom" secondItem="bgz-IQ-UiF" secondAttribute="bottom" constant="16" id="X3p-Db-WWm"/>
+                                    <constraint firstAttribute="trailing" secondItem="bgz-IQ-UiF" secondAttribute="trailing" constant="16" id="scs-d1-JEy"/>
+                                    <constraint firstItem="bgz-IQ-UiF" firstAttribute="leading" secondItem="eFE-ft-MHb" secondAttribute="leading" constant="16" id="uFr-Bf-WMu"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XIl-fl-hY8">
+                                <rect key="frame" x="0.0" y="88" width="375" height="515"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="u2O-vz-wVE" id="kWd-j7-62b"/>
+                                    <outlet property="delegate" destination="u2O-vz-wVE" id="QeK-zO-7RP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XIl-fl-hY8" firstAttribute="leading" secondItem="18c-za-4lJ" secondAttribute="leading" id="1LE-ef-llX"/>
+                            <constraint firstItem="18c-za-4lJ" firstAttribute="trailing" secondItem="eFE-ft-MHb" secondAttribute="trailing" id="8z3-yF-0Iv"/>
+                            <constraint firstItem="eFE-ft-MHb" firstAttribute="leading" secondItem="18c-za-4lJ" secondAttribute="leading" id="Efe-cL-kYg"/>
+                            <constraint firstItem="eFE-ft-MHb" firstAttribute="top" secondItem="18c-za-4lJ" secondAttribute="top" id="LXn-3B-E4g"/>
+                            <constraint firstItem="18c-za-4lJ" firstAttribute="trailing" secondItem="XIl-fl-hY8" secondAttribute="trailing" id="PcG-ck-Q4t"/>
+                            <constraint firstItem="XIl-fl-hY8" firstAttribute="top" secondItem="eFE-ft-MHb" secondAttribute="bottom" id="RtL-Qk-piw"/>
+                            <constraint firstItem="18c-za-4lJ" firstAttribute="bottom" secondItem="XIl-fl-hY8" secondAttribute="bottom" id="cNL-95-zkz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="18c-za-4lJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Messages" id="VSs-k7-ULg">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="navigation-back" id="1ew-31-b3X">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didPressBackButton:" destination="u2O-vz-wVE" id="esu-R6-2Dd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="searchTextField" destination="bgz-IQ-UiF" id="7W9-5a-n8B"/>
+                        <outlet property="tableView" destination="XIl-fl-hY8" id="f0k-fQ-3zv"/>
+                        <segue destination="HQ3-TI-HxT" kind="show" identifier="messages" id="dCM-SE-WoS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Vv-il-BHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="P3d-RE-Wlc">
+            <objects>
+                <viewController storyboardIdentifier="MessageView" id="HQ3-TI-HxT" customClass="ConversationViewController" customModule="Bizdaq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HtD-kS-qqr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Up3-CE-iw2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Messages" id="ia7-pH-ECA">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="navigation-back" id="cO4-G6-rba">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didPressBackButton" destination="HQ3-TI-HxT" id="1ld-Gn-bJ0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Refresh" id="yCB-1b-da4">
+                            <connections>
+                                <action selector="refreshSelector:" destination="HQ3-TI-HxT" id="c1L-fv-e6F"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <segue destination="Cph-3b-t13" kind="show" identifier="requestOptions" id="Bf7-oc-OqU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WW2-2f-LcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="133.5832083958021"/>
+        </scene>
+        <!--Request Options View Controller-->
+        <scene sceneID="hUT-c4-yFc">
+            <objects>
+                <viewController id="Cph-3b-t13" customClass="RequestOptionsViewController" customModule="Bizdaq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K4b-hk-AOQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ToV-QS-hKp">
+                                <rect key="frame" x="139" y="121" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="hackyTextEditingStarted:" destination="Cph-3b-t13" eventType="editingDidBegin" id="Xtp-yn-AAD"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ToV-QS-hKp" firstAttribute="top" secondItem="rkJ-To-pWy" secondAttribute="top" constant="121" id="R6T-Ee-YIA"/>
+                            <constraint firstItem="rkJ-To-pWy" firstAttribute="trailing" secondItem="ToV-QS-hKp" secondAttribute="trailing" constant="139" id="WZb-ci-5p0"/>
+                            <constraint firstItem="rkJ-To-pWy" firstAttribute="bottom" secondItem="ToV-QS-hKp" secondAttribute="bottom" constant="452" id="el6-pc-YfW"/>
+                            <constraint firstItem="ToV-QS-hKp" firstAttribute="leading" secondItem="rkJ-To-pWy" secondAttribute="leading" constant="139" id="jNO-3s-THq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rkJ-To-pWy"/>
+                    </view>
+                    <connections>
+                        <outlet property="hackyText" destination="ToV-QS-hKp" id="w3w-4E-DeE"/>
+                        <segue destination="HQ3-TI-HxT" kind="showDetail" identifier="messagesFromRequest" id="6Tm-RS-ACb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pxf-kx-ezP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1895" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navigation-back" width="8" height="12"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dCM-SE-WoS"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aiZ-Ls-LUR" customClass="DashboardCollectionCell" customModule="Bizdaq" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="242" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="242" height="231"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="db7-fs-uil">
+                        <rect key="frame" x="5" y="5" width="232" height="221"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ex2-dy-cYI">
+                                <rect key="frame" x="0.0" y="0.0" width="232" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="K4V-Lg-Vwc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£72,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd3-xV-mT8">
+                                <rect key="frame" x="16" y="137" width="73" height="23"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" red="0.058823529409999999" green="0.51764705879999995" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Pizza Takeaway Business for sale " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fud-70-EK6">
+                                <rect key="frame" x="16" y="171" width="200" height="32.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nd3-xV-mT8" firstAttribute="top" secondItem="ex2-dy-cYI" secondAttribute="bottom" constant="14" id="3GK-La-g3a"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fud-70-EK6" secondAttribute="bottom" constant="10" id="GO2-9m-18s"/>
+                            <constraint firstItem="ex2-dy-cYI" firstAttribute="leading" secondItem="db7-fs-uil" secondAttribute="leading" id="Gsh-wl-xFS"/>
+                            <constraint firstItem="Nd3-xV-mT8" firstAttribute="leading" secondItem="db7-fs-uil" secondAttribute="leading" constant="16" id="d5o-nI-FEa"/>
+                            <constraint firstItem="fud-70-EK6" firstAttribute="top" secondItem="Nd3-xV-mT8" secondAttribute="bottom" constant="11" id="jpU-R8-9l0"/>
+                            <constraint firstItem="ex2-dy-cYI" firstAttribute="top" secondItem="db7-fs-uil" secondAttribute="top" id="rhn-eJ-pIz"/>
+                            <constraint firstAttribute="trailing" secondItem="fud-70-EK6" secondAttribute="trailing" constant="16" id="smo-sv-Xhe"/>
+                            <constraint firstAttribute="trailing" secondItem="ex2-dy-cYI" secondAttribute="trailing" id="yDu-1L-yjn"/>
+                            <constraint firstItem="fud-70-EK6" firstAttribute="leading" secondItem="db7-fs-uil" secondAttribute="leading" constant="16" id="yUO-kD-xKT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="db7-fs-uil" secondAttribute="trailing" constant="5" id="3zD-Lt-1PH"/>
+                <constraint firstItem="db7-fs-uil" firstAttribute="top" secondItem="aiZ-Ls-LUR" secondAttribute="top" constant="5" id="58x-Vz-8tk"/>
+                <constraint firstAttribute="bottom" secondItem="db7-fs-uil" secondAttribute="bottom" constant="5" id="9f3-ci-2sQ"/>
+                <constraint firstItem="db7-fs-uil" firstAttribute="leading" secondItem="aiZ-Ls-LUR" secondAttribute="leading" constant="5" id="LFL-eF-QcS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="QgP-fA-QQt"/>
+            <size key="customSize" width="374" height="271"/>
+            <connections>
+                <outlet property="backgroundCardView" destination="db7-fs-uil" id="0aK-nN-QTr"/>
+                <outlet property="descriptionLabel" destination="fud-70-EK6" id="dmI-0m-zjg"/>
+                <outlet property="heroImageView" destination="ex2-dy-cYI" id="1sQ-vx-70K"/>
+                <outlet property="priceLabel" destination="Nd3-xV-mT8" id="LKJ-BG-Tdc"/>
+            </connections>
+            <point key="canvasLocation" x="-461" y="49.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

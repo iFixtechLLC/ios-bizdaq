@@ -1,0 +1,50 @@
+{
+    "success":true,
+    "data":
+        {
+            "PublicUser":
+                {
+                    "how_did_you_hear_about_us":
+                        {
+                            "email":"Email",
+                            "google":"Google (or other search engine)",
+                            "letter":"Letter",
+                            "magazine":"Magazine",
+                            "local_newspaper":"Newspaper (local)",
+                            "national_newspaper":"Newspaper (National)",
+                            "online":"Online",
+                            "recommendation":"Recommendation"
+                        }
+                },
+            "Business":
+                {
+                    "tenure":
+                        {
+                            "freehold":"Freehold",
+                            "leasehold":"Leasehold",
+                            "relocatable":"Relocatable",
+                            "home_based":"Home-based",
+                            "web_based":"Web-based",
+                            "franchise":"Franchise"
+                        },
+                    "property_has_accomodation":
+                        {
+                            "no":"No",
+                            "yes":"Yes"
+                        },
+                    "has_staff":
+                        {
+                            "no":"No",
+                            "yes":"Yes"
+                        },
+                    "current_status":
+                        {
+                            "for_sale":"For sale",
+                            "under_offer":"Under offer",
+                            "sold":"Sold",
+                            "withdrawn":"Withdrawn",
+                            "hidden":"Hidden"
+                        }
+                }
+        }
+}

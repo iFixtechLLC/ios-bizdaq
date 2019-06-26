@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewingRequestSentPopup" customModule="Bizdaq" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmButton" destination="AtM-Gg-eIS" id="HMH-5b-fjb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Kuf-kj-hyw">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9j-Rq-u5y">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <connections>
+                        <action selector="didPressDismiss:" destination="-1" eventType="touchUpInside" id="V68-ni-Tb9"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUM-ja-pvP">
+                    <rect key="frame" x="30" y="143.5" width="315" height="400.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viewing request sent" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbe-og-viB">
+                            <rect key="frame" x="20" y="122" width="275" height="23"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                            <color key="textColor" name="bizdaq-blue"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHF-In-i6y">
+                            <rect key="frame" x="15" y="170" width="275" height="110.5"/>
+                            <string key="text">Congratulations! Your viewing request has now been sent to the seller. 
+
+You will receive a notification in your dashboard once the seller confirms or declines your viewing request.</string>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtM-Gg-eIS">
+                            <rect key="frame" x="16" y="317.5" width="283" height="48"/>
+                            <color key="backgroundColor" name="bizdaq-blue"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="GVf-Fi-mah"/>
+                            </constraints>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressDismiss:" destination="-1" eventType="touchUpInside" id="oJZ-Cg-RAm"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viewing_request_icon" translatesAutoresizingMaskIntoConstraints="NO" id="6gZ-Ff-5wn">
+                            <rect key="frame" x="131.5" y="46" width="52" height="41"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="mHF-In-i6y" firstAttribute="leading" secondItem="XUM-ja-pvP" secondAttribute="leading" constant="15" id="2mQ-Jr-KwQ"/>
+                        <constraint firstItem="AtM-Gg-eIS" firstAttribute="top" secondItem="mHF-In-i6y" secondAttribute="bottom" constant="37" id="7XC-Fd-gM3"/>
+                        <constraint firstItem="qbe-og-viB" firstAttribute="leading" secondItem="XUM-ja-pvP" secondAttribute="leading" constant="20" id="E5Q-mh-Svr"/>
+                        <constraint firstItem="AtM-Gg-eIS" firstAttribute="leading" secondItem="XUM-ja-pvP" secondAttribute="leading" constant="16" id="FbF-Ru-MAc"/>
+                        <constraint firstAttribute="trailing" secondItem="qbe-og-viB" secondAttribute="trailing" constant="20" id="Mpa-4t-QVZ"/>
+                        <constraint firstAttribute="trailing" secondItem="AtM-Gg-eIS" secondAttribute="trailing" constant="16" id="NQN-Ai-El2"/>
+                        <constraint firstAttribute="bottom" secondItem="AtM-Gg-eIS" secondAttribute="bottom" constant="35" id="Pwj-fm-eU9"/>
+                        <constraint firstItem="6gZ-Ff-5wn" firstAttribute="top" secondItem="XUM-ja-pvP" secondAttribute="top" constant="46" id="WfA-xL-4iK"/>
+                        <constraint firstAttribute="trailing" secondItem="mHF-In-i6y" secondAttribute="trailing" constant="25" id="ZfR-sI-nk7"/>
+                        <constraint firstItem="6gZ-Ff-5wn" firstAttribute="centerX" secondItem="XUM-ja-pvP" secondAttribute="centerX" id="fPJ-3t-4cl"/>
+                        <constraint firstItem="mHF-In-i6y" firstAttribute="top" secondItem="qbe-og-viB" secondAttribute="bottom" constant="25" id="gU6-lL-rGn"/>
+                        <constraint firstItem="qbe-og-viB" firstAttribute="top" secondItem="6gZ-Ff-5wn" secondAttribute="bottom" constant="35" id="xSP-cs-cGM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7bY-00-GS9" firstAttribute="trailing" secondItem="XUM-ja-pvP" secondAttribute="trailing" constant="30" id="BAE-08-c4c"/>
+                <constraint firstItem="7bY-00-GS9" firstAttribute="bottom" secondItem="i9j-Rq-u5y" secondAttribute="bottom" id="FOF-RP-fs7"/>
+                <constraint firstItem="XUM-ja-pvP" firstAttribute="centerY" secondItem="7bY-00-GS9" secondAttribute="centerY" id="Hie-rJ-Xyd"/>
+                <constraint firstItem="i9j-Rq-u5y" firstAttribute="top" secondItem="7bY-00-GS9" secondAttribute="top" id="Jgh-YR-TwK"/>
+                <constraint firstItem="XUM-ja-pvP" firstAttribute="leading" secondItem="7bY-00-GS9" secondAttribute="leading" constant="30" id="MTe-WU-tib"/>
+                <constraint firstItem="7bY-00-GS9" firstAttribute="trailing" secondItem="i9j-Rq-u5y" secondAttribute="trailing" id="YcA-WB-lAF"/>
+                <constraint firstItem="i9j-Rq-u5y" firstAttribute="leading" secondItem="7bY-00-GS9" secondAttribute="leading" id="ciB-dk-YAJ"/>
+                <constraint firstItem="XUM-ja-pvP" firstAttribute="centerX" secondItem="7bY-00-GS9" secondAttribute="centerX" id="xPe-7B-poa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="7bY-00-GS9"/>
+            <point key="canvasLocation" x="7" y="-104"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="viewing_request_icon" width="52" height="41"/>
+        <namedColor name="bizdaq-blue">
+            <color red="0.11800000071525574" green="0.5220000147819519" blue="0.87800002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

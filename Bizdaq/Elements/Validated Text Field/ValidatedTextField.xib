@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ValidatedTextField" customModule="Bizdaq" customModuleProvider="target">
+            <connections>
+                <outlet property="clearButton" destination="zyP-v4-6bh" id="hdF-YB-8Rl"/>
+                <outlet property="clearImage" destination="nus-S1-jrV" id="e0W-am-PuO"/>
+                <outlet property="constrainToEdge" destination="8Oo-Wi-3q7" id="1L3-do-Tyk"/>
+                <outlet property="imageView" destination="JgE-WR-c1M" id="2ZC-bk-7F2"/>
+                <outlet property="rightImageView" destination="Lgs-em-Q8F" id="cTp-uq-QUc"/>
+                <outlet property="textField" destination="rIC-yW-PGA" id="JTR-xI-rzP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-cross" translatesAutoresizingMaskIntoConstraints="NO" id="nus-S1-jrV">
+                    <rect key="frame" x="345" y="21" width="14" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="IRl-B9-Zko"/>
+                        <constraint firstAttribute="width" constant="14" id="P2M-Dp-CNL"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rIC-yW-PGA">
+                    <rect key="frame" x="16" y="0.0" width="317" height="56"/>
+                    <color key="textColor" red="0.078431372549019607" green="0.10196078431372549" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                    <connections>
+                        <action selector="editingChanged:" destination="-1" eventType="editingChanged" id="WrT-Xf-lYR"/>
+                        <outlet property="delegate" destination="-1" id="PBt-V8-SgX"/>
+                    </connections>
+                </textField>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="navigation-arrow-grey" translatesAutoresizingMaskIntoConstraints="NO" id="Lgs-em-Q8F">
+                    <rect key="frame" x="348" y="22" width="8" height="12"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyP-v4-6bh">
+                    <rect key="frame" x="332" y="0.0" width="40" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="k6k-pI-U8m"/>
+                    </constraints>
+                    <connections>
+                        <action selector="didPressClearButton" destination="-1" eventType="touchUpInside" id="qCH-f9-ZjT"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="currency_icon" translatesAutoresizingMaskIntoConstraints="NO" id="JgE-WR-c1M">
+                    <rect key="frame" x="16" y="21" width="10" height="14"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rIC-yW-PGA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="8Oo-Wi-3q7"/>
+                <constraint firstItem="Lgs-em-Q8F" firstAttribute="centerY" secondItem="zyP-v4-6bh" secondAttribute="centerY" id="BRI-KJ-1qN"/>
+                <constraint firstItem="nus-S1-jrV" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="H6Q-Kd-mx3"/>
+                <constraint firstItem="JgE-WR-c1M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="IKl-LN-tEr"/>
+                <constraint firstItem="nus-S1-jrV" firstAttribute="leading" secondItem="rIC-yW-PGA" secondAttribute="trailing" constant="12" id="JPB-2N-ala"/>
+                <constraint firstItem="Lgs-em-Q8F" firstAttribute="centerX" secondItem="zyP-v4-6bh" secondAttribute="centerX" id="JRw-p4-rbx"/>
+                <constraint firstItem="zyP-v4-6bh" firstAttribute="centerY" secondItem="nus-S1-jrV" secondAttribute="centerY" id="N1f-GS-Wu3"/>
+                <constraint firstItem="rIC-yW-PGA" firstAttribute="leading" secondItem="JgE-WR-c1M" secondAttribute="trailing" priority="750" constant="12" id="UhL-jC-NCK"/>
+                <constraint firstItem="JgE-WR-c1M" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="b7S-MG-Yge"/>
+                <constraint firstItem="zyP-v4-6bh" firstAttribute="centerX" secondItem="nus-S1-jrV" secondAttribute="centerX" id="bM8-EE-2tH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nus-S1-jrV" secondAttribute="trailing" constant="16" id="bjM-zT-vkR"/>
+                <constraint firstItem="rIC-yW-PGA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="get-XX-3Vl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rIC-yW-PGA" secondAttribute="bottom" id="rBX-6p-9AI"/>
+                <constraint firstItem="zyP-v4-6bh" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="rge-zW-mo9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="341"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="blue-cross" width="14" height="14"/>
+        <image name="currency_icon" width="10" height="14"/>
+        <image name="navigation-arrow-grey" width="8" height="12"/>
+    </resources>
+</document>

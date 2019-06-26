@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MultipleSelectionCell" customModule="Bizdaq" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AjJ-R7-bc3">
+                    <rect key="frame" x="0.0" y="0.0" width="377" height="83"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="unselected" translatesAutoresizingMaskIntoConstraints="NO" id="wbe-kY-cIt">
+                            <rect key="frame" x="337" y="29.5" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="74j-vL-np8"/>
+                                <constraint firstAttribute="height" constant="24" id="8DS-Dc-zZ0"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcX-f5-Plg">
+                            <rect key="frame" x="16" y="32.5" width="39.5" height="18.5"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n7-Xe-2Rv">
+                            <rect key="frame" x="0.0" y="0.0" width="377" height="83"/>
+                            <connections>
+                                <action selector="didPressSelectionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="GCq-WX-Q5Z"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4n7-Xe-2Rv" firstAttribute="leading" secondItem="AjJ-R7-bc3" secondAttribute="leading" id="0Ed-c1-MUy"/>
+                        <constraint firstItem="wbe-kY-cIt" firstAttribute="centerY" secondItem="AjJ-R7-bc3" secondAttribute="centerY" id="ASS-TB-44w"/>
+                        <constraint firstAttribute="trailing" secondItem="4n7-Xe-2Rv" secondAttribute="trailing" id="Kis-uI-Jrp"/>
+                        <constraint firstItem="CcX-f5-Plg" firstAttribute="leading" secondItem="AjJ-R7-bc3" secondAttribute="leading" constant="16" id="R7J-kR-t5G"/>
+                        <constraint firstItem="CcX-f5-Plg" firstAttribute="centerY" secondItem="wbe-kY-cIt" secondAttribute="centerY" id="ZBs-jN-3Rr"/>
+                        <constraint firstAttribute="bottom" secondItem="4n7-Xe-2Rv" secondAttribute="bottom" id="co6-6C-Vdf"/>
+                        <constraint firstAttribute="trailing" secondItem="wbe-kY-cIt" secondAttribute="trailing" constant="16" id="ex1-2Q-3LG"/>
+                        <constraint firstItem="4n7-Xe-2Rv" firstAttribute="top" secondItem="AjJ-R7-bc3" secondAttribute="top" id="mBB-Do-zrf"/>
+                        <constraint firstItem="wbe-kY-cIt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CcX-f5-Plg" secondAttribute="trailing" constant="20" id="mWI-Dr-qRY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AjJ-R7-bc3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="AIR-ac-ml5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AjJ-R7-bc3" secondAttribute="trailing" id="D9p-vS-Pe2"/>
+                <constraint firstItem="AjJ-R7-bc3" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="i9r-xX-UQi"/>
+                <constraint firstItem="AjJ-R7-bc3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="omp-HM-gMl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="pressedImage" destination="wbe-kY-cIt" id="4os-pv-9jd"/>
+                <outlet property="titleLabel" destination="CcX-f5-Plg" id="uYg-Sl-L6z"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="398.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="unselected" width="24" height="24"/>
+    </resources>
+</document>

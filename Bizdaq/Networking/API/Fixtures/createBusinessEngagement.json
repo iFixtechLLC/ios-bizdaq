@@ -1,0 +1,30 @@
+{
+    "success":true,
+    "data":
+    {
+        "BusinessEngagement":
+        {
+            "id":null,
+            "business_id":400,
+            "buyer_public_user_id":6573,
+            "is_full_details_requested":true,
+            "date_time_full_details_requested":"2018-05-30 16:44:06",
+            "is_full_details_accessible":null,
+            "is_full_details_withdrawn":null,
+            "date_time_full_details_withdrawn":null,
+            "BusinessEngagementBids":[],
+            "BusinessEngagementViewings":[],
+            "BusinessEngagementDocumentRequests":[],
+            "Messages":
+            [
+             {
+             "id":null,
+             "from_public_user_id":6573,
+             "to_public_user_id":883,
+             "business_engagement_id":null,
+             "content":"Testing"
+             }
+             ]
+        }
+    }
+}
